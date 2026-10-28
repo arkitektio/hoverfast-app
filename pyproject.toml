@@ -8,7 +8,7 @@ authors = [
 ]
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "arkitekt[all]>=10.0",
+    "arkitekt[all]>=10.0.1",
     # The measurements are uploaded as a table: pyarrow, pandas and duckdb.
     "mikro[table]>=8.0.0",
     # pyarrow 26 needs numpy 2 to import, without saying so, and HoverFast pins numpy 1.
