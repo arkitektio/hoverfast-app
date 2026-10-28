@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.1 (2026-10-28)
+
+### Bug Fixes
+
+- Record the scopes a run asks for (arkitekt 10.0.1)
+  ([`601141a`](https://github.com/arkitektio/hoverfast-app/commit/601141aaeb1e89fa2eac2d91e67c9ea0678cece2))
+
+
 ## v0.2.0 (2026-10-28)
 
 ### Features

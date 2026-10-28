@@ -39,7 +39,7 @@ from hoverfast_app.measure import nucleus_table
 from hoverfast_app.segment import Predict, segment, to_uint8_rgb
 
 # The version of the app. A release is the commit tagged with it (v1.2.3).
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 # The app is a declaration: who it is, what it offers, and the services it uses.
 # `arkitekt run` finds it in this module (as `app`) and runs it; so does
