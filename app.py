@@ -49,7 +49,6 @@ app = App(
     __version__,
     description="HoverFast nuclei segmentation of H&E images",
     author="jhnnsrs",
-    scopes=["read"],
     services=[mikro_service],
 )
 

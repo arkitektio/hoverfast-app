@@ -8,7 +8,7 @@ authors = [
 ]
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "arkitekt[all]>=9.0",
+    "arkitekt[all]>=10.0",
     # The measurements are uploaded as a table: pyarrow, pandas and duckdb.
     "mikro[table]>=8.0.0",
     # pyarrow 26 needs numpy 2 to import, without saying so, and HoverFast pins numpy 1.
@@ -50,6 +50,8 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    # The hub tests (`-m hub`): a hub made for them, from the images the clients declare.
+    "konstruktor>=0.34.1",
 ]
 
 [tool.pytest.ini_options]
