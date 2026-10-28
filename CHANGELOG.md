@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.3 (2026-10-28)
+
+### Bug Fixes
+
+- Release an image built on arkitekt 10.0.2
+  ([`b3ea0e7`](https://github.com/arkitektio/hoverfast-app/commit/b3ea0e72bb773892c4a9d1e45ea0676f116562bf))
+
+
 ## v0.2.2 (2026-10-28)
 
 ### Bug Fixes
