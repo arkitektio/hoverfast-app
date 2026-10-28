@@ -1,0 +1,69 @@
+[project]
+name = "hoverfast-app"
+version = "0.1.0"
+description = "HoverFast nuclei segmentation of H&E images, as an Arkitekt app"
+readme = "README.md"
+authors = [
+    { name = "Johannes Roos", email = "jhnnsrs@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "arkitekt[all]>=9.0",
+    # The measurements are uploaded as a table: pyarrow, pandas and duckdb.
+    "mikro[table]>=8.0.0",
+    # pyarrow 26 needs numpy 2 to import, without saying so, and HoverFast pins numpy 1.
+    "pyarrow<26",
+    # HoverFast is not on PyPI: its dev branch, at the commit the weights in
+    # src/hoverfast_app/weights/ were taken from. It pins numpy==1.26.2.
+    "hoverfast @ git+https://github.com/choosehappy/HoverFast@66c97aa4893f0f823cef17eec4a45dc7009356eb",
+]
+
+# Which torch: `--extra cpu` (the vanilla flavour, and CI) or `--extra cu126` (the cuda
+# flavour). Without either, torch comes from PyPI as HoverFast asks for it.
+[project.optional-dependencies]
+cpu = ["torch>=2.1"]
+cu126 = ["torch>=2.1"]
+
+[tool.uv]
+conflicts = [[{ extra = "cpu" }, { extra = "cu126" }]]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", extra = "cpu" },
+    { index = "pytorch-cu126", extra = "cu126" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not hub'"
+markers = [
+    "hub: needs a hub made for the tests (Docker and konstruktor)",
+]
+
+[tool.semantic_release]
+version_variables = ["app.py:__version__"]
+commit_message = "chore(release): {version} [skip ci]"
+tag_format = "v{version}"
+allow_zero_version = true
+
+[tool.semantic_release.branches.release]
+match = "main"
+prerelease = false
