@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.2.5 (2026-11-01)
+
+### Bug Fixes
+
+- Release an image built on arkitekt 13.0.0
+  ([`175f4b8`](https://github.com/arkitektio/hoverfast-app/commit/175f4b8e503e2ee1b0036c3e93b67ea4df23aa67))
+
+### Build System
+
+- Lock arkitekt 13.0.0
+  ([`abacc2a`](https://github.com/arkitektio/hoverfast-app/commit/abacc2a54c4a58cc299d929df2199cf72793faef))
+
+
 ## v0.2.4 (2026-11-01)
 
 ### Bug Fixes
