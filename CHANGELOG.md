@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.2.6 (2026-11-03)
+
+### Bug Fixes
+
+- Build on arkitekt 13.1.0
+  ([`e12faef`](https://github.com/arkitektio/hoverfast-app/commit/e12faef191844e8c1d1b566493d4301a8c961507))
+
+### Refactoring
+
+- Adopt Python 3.11 typing (X | None, builtin generics, collections.abc)
+  ([`9e9c3d9`](https://github.com/arkitektio/hoverfast-app/commit/9e9c3d9b22846e53fe04dba7209863f5d40a079a))
+
+
 ## v0.2.5 (2026-11-01)
 
 ### Bug Fixes
