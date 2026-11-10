@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.7 (2026-11-10)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 14.1.0 and mikro 13, with the Open in Arkitekt badge
+  ([`ecf234e`](https://github.com/arkitektio/hoverfast-app/commit/ecf234ed44474ce6c6af54c11accd9c1277e30c9))
+
+
 ## v0.2.6 (2026-11-03)
 
 ### Bug Fixes
