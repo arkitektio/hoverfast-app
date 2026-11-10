@@ -8,9 +8,9 @@ authors = [
 ]
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "arkitekt[all]>=13.1.0",
+    "arkitekt[all]>=14.1.0",
     # The measurements are uploaded as a table: pyarrow, pandas and duckdb.
-    "mikro[table]>=8.0.0",
+    "mikro[table,xarray]>=13.0.0",
     # pyarrow 26 needs numpy 2 to import, without saying so, and HoverFast pins numpy 1.
     "pyarrow<26",
     # HoverFast is not on PyPI: its dev branch, at the commit the weights in

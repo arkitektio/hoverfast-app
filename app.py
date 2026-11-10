@@ -146,7 +146,7 @@ def segment_nuclei(
         One row per nucleus, keyed by its id in the labels: its area, centroid,
         bounding box, eccentricity and solidity
     """
-    data = image.data
+    data = image.xarray_data
     space_axes = image.axes_of_type(AxisType.SPACE)
     (channel_axis,) = image.axes_of_type(AxisType.CHANNEL)
     plane = data.squeeze([d for d in data.dims if d not in space_axes and d != channel_axis])

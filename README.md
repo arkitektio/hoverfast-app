@@ -1,5 +1,9 @@
 # hoverfast-app
 
+<!-- arkitekt:badge -->
+[![Open in Arkitekt](https://arkitekt.live/img/badge/open-in-arkitekt.svg)](https://arkitekt.live/deeplink?orkestrator=%2Fdo%2Fv1%2Frepo.install%3Fsource%3Doci%253Aghcr.io%252Farkitektio%252Fhoverfast-app)
+<!-- /arkitekt:badge -->
+
 [HoverFast](https://github.com/choosehappy/HoverFast) nuclei segmentation of H&E images, as an [Arkitekt](https://arkitekt.live) app.
 
 HoverFast is a small multi-scale U-Net, distilled from HoVer-Net. It predicts where nuclei are and, for every pixel, how far it is from the centre of its nucleus. A watershed then splits touching nuclei along those maps. This app runs HoverFast's pretrained cross-tissue model on an RGB image in mikro and returns two things:
