@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.8 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 16, on agent protocol 2
+  ([`90c51be`](https://github.com/arkitektio/hoverfast-app/commit/90c51be865907100b7b973b28c6dd816f0c3b5bb))
+
+
 ## v0.2.7 (2026-11-10)
 
 ### Bug Fixes
