@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.9 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Rekuest 15.0.1 and arkitekt-runtime 10.0.1
+  ([`8c7808e`](https://github.com/arkitektio/hoverfast-app/commit/8c7808e999d721335f0e8722b72bd6c86a585b89))
+
+
 ## v0.2.8 (2026-11-15)
 
 ### Bug Fixes
