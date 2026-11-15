@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.10 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 17 and arkitekt-spec 11
+  ([`c0ee75c`](https://github.com/arkitektio/hoverfast-app/commit/c0ee75c9c228426994e9f28ce0d3ec051a1c5f43))
+
+
 ## v0.2.9 (2026-11-15)
 
 ### Bug Fixes
