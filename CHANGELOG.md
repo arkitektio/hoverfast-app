@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.2.11 (2026-11-16)
+
+### Bug Fixes
+
+- Release an image built on arkitekt 18
+  ([`9a4fd77`](https://github.com/arkitektio/hoverfast-app/commit/9a4fd7784fb6a48352ba3c529fe2e4d8cfe837c7))
+
+### Build System
+
+- Lock arkitekt 18
+  ([`ecf3493`](https://github.com/arkitektio/hoverfast-app/commit/ecf34939f2a9912f0c9b7287015407bf78c27a60))
+
+
 ## v0.2.10 (2026-11-15)
 
 ### Bug Fixes
