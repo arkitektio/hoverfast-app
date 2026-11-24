@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.12 (2026-11-24)
+
+### Bug Fixes
+
+- Build on arkitekt 18.5.2, rekuest 18, arkitekt-spec 13 and mikro 14.2
+  ([`e4d8fe6`](https://github.com/arkitektio/hoverfast-app/commit/e4d8fe6e66a4a6463d2ecf09f9c86496c5db71a5))
+
+
 ## v0.2.11 (2026-11-16)
 
 ### Bug Fixes
