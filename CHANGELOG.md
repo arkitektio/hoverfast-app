@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.13 (2026-11-25)
+
+### Bug Fixes
+
+- Runs on arkitekt 19
+  ([`79bb900`](https://github.com/arkitektio/hoverfast-app/commit/79bb900a3817ec9026c2457619c9f1352887a41e))
+
+
 ## v0.2.12 (2026-11-24)
 
 ### Bug Fixes
