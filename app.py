@@ -17,7 +17,7 @@ import cv2
 import numpy as np
 import xarray as xr
 from arkitekt import App, Description, DescriptorOperator, Provides, Requires, Task, run
-from mikro import Mikro, mikro_service
+from mikro import Mikro
 from mikro.api.schema import (
     ArrayLens,
     AxisType,
@@ -41,7 +41,7 @@ from hoverfast_app.segment import Predict, segment, to_uint8_rgb
 # The version of the app. A release is the commit tagged with it (v1.2.3).
 __version__ = "0.2.12"
 
-# The app is a declaration: who it is, what it offers, and the services it uses.
+# The app is a declaration: who it is and what it offers.
 # `arkitekt run` finds it in this module (as `app`) and runs it; so does
 # `python app.py`, below.
 app = App(
@@ -49,7 +49,6 @@ app = App(
     __version__,
     description="HoverFast nuclei segmentation of H&E images",
     author="jhnnsrs",
-    services=[mikro_service],
 )
 
 COLLECTIONS = ["segmentation", "nuclei", "histology"]
